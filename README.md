@@ -18,6 +18,9 @@ and run `bundle install`.
 In your `application.js`, include the following:
 
 ```js
+// for bootstrap version 3
+//= require bootstrap-switch3
+// for bootstrap version 2
 //= require bootstrap-switch
 ```
 
@@ -25,6 +28,8 @@ In your `application.css`, include the following:
 
 ```css
 /*
+ * for bootsrap version 3
+ *= require bootstrap-switch3
  * for bootstrap3
  *= require bootstrap3-switch
  *
@@ -38,6 +43,8 @@ In your `application.css`, include the following:
 or in any `SASS` file, include the following:
 
 ```css
+/* for bootsrap version 3 */
+@import "bootstrap-switch3";
 /* for bootstrap3 */
 @import "bootstrap3-switch";
 /* or for bootstrap2 */
@@ -52,6 +59,7 @@ See the [demo page of Mattia Larentis](http://www.bootstrap-switch.org/) for exa
 
 | Version | Notes                                                                               |
 | -------:| ----------------------------------------------------------------------------------- |
+|   2.1.0 | Allow for use of v3.0 of the bootstrap-switch plugin
 |   2.0.2 | Fixed issue where bootstrap 2 sass wasn't compiling (issue #7)                      |
 |   2.0.1 | Update to v2.0.1 of the bootstrap-switch plugin                                     |
 |   2.0.0 | Update to v2.0 of the bootstrap-switch plugin                                       |
